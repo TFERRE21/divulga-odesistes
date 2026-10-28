@@ -31,10 +31,18 @@ Para ativar:
 4. Para cada propriedade GA4, crie secrets com os IDs numéricos: `GA4_PROPERTY_ID_OOLIVO`, `GA4_PROPERTY_ID_BIOMASSA_FLORESTAL`, `GA4_PROPERTY_ID_DAYMONEY`, `GA4_PROPERTY_ID_VERSOS_MUSICAIS`, `GA4_PROPERTY_ID_GLOBALTOOLS` e `GA4_PROPERTY_ID_CRIPTOPROBOT`.
 5. Execute o workflow manualmente em Actions para validar o acesso. Sem as credenciais, o painel continuará mostrando o monitoramento técnico e indicará que as métricas não foram configuradas.
 
+## Pinterest: publicação com aprovação
+Existe uma fila em `data/pinterest-queue.json` e um workflow manual `Publicar Pins aprovados`. Por segurança, os itens começam como `aguardando_revisao`; o publicador só processa itens cujo status foi alterado explicitamente para `aprovado`, e que tenham URL HTTPS do site e imagem pública HTTPS.
+1. Crie/configure o app Pinterest com permissões para criar Pins.
+2. Em Settings → Secrets and variables → Actions, adicione `PINTEREST_ACCESS_TOKEN` e `PINTEREST_BOARD_ID`.
+3. Edite a fila: revise título/descrição, preencha `imageUrl` com imagem pública de sua propriedade/licenciada e `boardId` se usar um quadro específico; só então altere `status` para `aprovado`.
+4. Abra Actions → Publicar Pins aprovados → Run workflow. Revise o resultado em `data/pinterest-queue.json`.
+5. Nunca coloque tokens no código, em arquivos JSON ou em mensagens.
+
 ## Próximas integrações
 1. UTMs e acompanhamento de visitas por canal.
-2. Pinterest e outras redes por APIs oficiais, com credenciais, imagens públicas e permissões adequadas.
-3. Fila de revisão e aprovação antes de qualquer publicação externa.
+2. Mais redes sociais por APIs oficiais, cada uma com autorização e fila de aprovação.
+3. Comparação semanal de métricas e recomendações baseadas em resultados.
 
 ## Limites de segurança
 O monitor apenas faz requisições normais para verificar saúde técnica. Não gera visitas artificiais, cliques em anúncios, comentários automáticos, troca de tráfego nem consultas automatizadas não autorizadas ao Google. O plano gera rascunhos, não publica em redes sociais.
