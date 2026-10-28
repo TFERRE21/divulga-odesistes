@@ -1,0 +1,74 @@
+[
+  {
+    "id": "oolivo",
+    "name": "Oolivo",
+    "url": "https://oolivo.com.br/",
+    "sitemap": "https://oolivo.com.br/sitemap.xml",
+    "robots": "https://oolivo.com.br/robots.txt",
+    "topics": [
+      "ferramentas online",
+      "produtos e serviços",
+      "tutoriais práticos"
+    ]
+  },
+  {
+    "id": "biomassa-florestal",
+    "name": "Biomassa Florestal",
+    "url": "https://biomassaflorestal.com.br/",
+    "sitemap": "https://biomassaflorestal.com.br/sitemap.xml",
+    "robots": "https://biomassaflorestal.com.br/robots.txt",
+    "topics": [
+      "biomassa",
+      "lenha e energia",
+      "mercado florestal"
+    ]
+  },
+  {
+    "id": "daymoney",
+    "name": "DayMoney",
+    "url": "https://daymoney.com.br/",
+    "sitemap": "https://daymoney.com.br/sitemap.xml",
+    "robots": "https://daymoney.com.br/robots.txt",
+    "topics": [
+      "educação financeira",
+      "controle de despesas",
+      "finanças para pequenas empresas"
+    ]
+  },
+  {
+    "id": "versos-musicais",
+    "name": "Versos Musicais",
+    "url": "https://versosmusicais.com.br/",
+    "sitemap": "https://versosmusicais.com.br/sitemap.xml",
+    "robots": "https://versosmusicais.com.br/robots.txt",
+    "topics": [
+      "música e artistas",
+      "cifras e gêneros musicais",
+      "descoberta musical"
+    ]
+  },
+  {
+    "id": "globaltools",
+    "name": "GlobalTools",
+    "url": "https://globaltoolsnow.com/",
+    "sitemap": "https://globaltoolsnow.com/sitemap.xml",
+    "robots": "https://globaltoolsnow.com/robots.txt",
+    "topics": [
+      "ferramentas online",
+      "calculadoras e conversores",
+      "tutoriais de produtividade"
+    ]
+  },
+  {
+    "id": "criptoprobot",
+    "name": "CriptoProBot",
+    "url": "https://criptoprobot.com.br/",
+    "sitemap": "https://criptoprobot.com.br/sitemap.xml",
+    "robots": "https://criptoprobot.com.br/robots.txt",
+    "topics": [
+      "educação sobre criptoativos",
+      "automação e análise",
+      "gestão de risco"
+    ]
+  }
+]
