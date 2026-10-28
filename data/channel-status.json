@@ -1,0 +1,78 @@
+{
+  "updatedAt": "2026-10-28T16:48:33.817Z",
+  "note": "Status de integração do canal. 'pendente' significa que não há confirmação de credenciais e publicação; não indica que houve divulgação.",
+  "channels": [
+    {
+      "id": "pinterest",
+      "name": "Pinterest",
+      "type": "publicacao_api",
+      "status": "aguardando_credenciais",
+      "capability": "Publicar Pins aprovados com imagem pública HTTPS",
+      "requiredSecrets": [
+        "PINTEREST_ACCESS_TOKEN",
+        "PINTEREST_BOARD_ID"
+      ],
+      "evidence": "data/publication-log.json",
+      "setupUrl": "https://developers.pinterest.com/"
+    },
+    {
+      "id": "google-search-console",
+      "name": "Google Search Console",
+      "type": "seo_organico",
+      "status": "aguardando_credenciais",
+      "capability": "Medir cliques e impressões orgânicas; não publica posts",
+      "requiredSecrets": [
+        "GOOGLE_SERVICE_ACCOUNT_JSON"
+      ],
+      "evidence": "data/google-metrics.json",
+      "setupUrl": "https://search.google.com/search-console"
+    },
+    {
+      "id": "google-analytics",
+      "name": "Google Analytics 4",
+      "type": "analytics",
+      "status": "aguardando_credenciais",
+      "capability": "Medir sessões e visualizações; não publica posts",
+      "requiredSecrets": [
+        "GOOGLE_SERVICE_ACCOUNT_JSON",
+        "GA4_PROPERTY_ID_*"
+      ],
+      "evidence": "data/google-metrics.json",
+      "setupUrl": "https://analytics.google.com/"
+    },
+    {
+      "id": "facebook-instagram",
+      "name": "Facebook / Instagram",
+      "type": "publicacao_api",
+      "status": "nao_integrado",
+      "capability": "Publicação futura por API oficial da Meta; requer conta profissional, app e permissões",
+      "requiredSecrets": [
+        "Meta app/token (a definir)"
+      ],
+      "evidence": "data/publication-log.json",
+      "setupUrl": "https://developers.facebook.com/"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "type": "publicacao_api",
+      "status": "nao_integrado",
+      "capability": "Publicação futura por API oficial e permissões adequadas",
+      "requiredSecrets": [
+        "LinkedIn OAuth (a definir)"
+      ],
+      "evidence": "data/publication-log.json",
+      "setupUrl": "https://developer.linkedin.com/"
+    },
+    {
+      "id": "comunidades",
+      "name": "Comunidades e fóruns",
+      "type": "revisao_manual",
+      "status": "revisao_manual",
+      "capability": "Participação útil e contextual; sem postagem automática em massa",
+      "requiredSecrets": [],
+      "evidence": "data/publication-log.json",
+      "setupUrl": ""
+    }
+  ]
+}
