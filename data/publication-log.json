@@ -1,0 +1,10 @@
+{
+  "generatedAt": "2026-10-28T16:46:03.299Z",
+  "summary": {
+    "published": 0,
+    "failed": 0,
+    "skipped": 0
+  },
+  "events": [],
+  "note": "Este registro só mostra publicações efetivamente confirmadas pela API ou tentativas registradas pelo publicador. Pautas em revisão não contam como divulgação."
+}
