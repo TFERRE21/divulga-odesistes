@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "monitor": "node scripts/monitor.js",
-    "test": "node --test"
+    "test": "node --test",
+    "start": "node server.js"
   }
 }
