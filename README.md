@@ -48,4 +48,11 @@ Existe uma fila em `data/pinterest-queue.json` e um workflow manual `Publicar Pi
 O monitor apenas faz requisições normais para verificar saúde técnica. Não gera visitas artificiais, cliques em anúncios, comentários automáticos, troca de tráfego nem consultas automatizadas não autorizadas ao Google. O plano gera rascunhos, não publica em redes sociais.
 
 ## Agendamento
-O workflow usa GitHub Actions a cada 30 minutos. O GitHub pode atrasar execuções agendadas e o recurso deve permanecer habilitado no repositório. Consulte a aba Actions para confirmar execuções reais.
+## Automação e comprovação de divulgação
+- O workflow de monitoramento roda por agendamento a cada 30 minutos e também pode ser executado manualmente. O GitHub pode atrasar execuções agendadas; mantenha Actions habilitado e confira o histórico.
+- O workflow do Pinterest tenta publicar diariamente somente Pins com status `aprovado`. Para que publique, configure `PINTEREST_ACCESS_TOKEN` e `PINTEREST_BOARD_ID`, preencha `imageUrl` com imagem HTTPS pública e revise o conteúdo antes de alterar o status para `aprovado`.
+- Cada tentativa é registrada em `data/publication-log.json`. Só a resposta bem-sucedida da API é registrada como `publicado`; o log contém data, canal, site de destino, ID e link da publicação quando retornado.
+- Itens em revisão, sugestões de pauta, sitemap enviado ao Google e visitas de monitoramento não contam como divulgação em redes sociais.
+- Confira execuções reais em https://github.com/TFERRE21/divulga-odesistes/actions e a aba “Onde foi divulgado?” no painel.
+
+O GitHub pode atrasar execuções agendadas e o recurso deve permanecer habilitado no repositório. Consulte a aba Actions para confirmar execuções reais.
