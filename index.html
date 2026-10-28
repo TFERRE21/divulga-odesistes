@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#101827">
+<title>Central de Divulgação 24h</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1220;--panel:#131e30;--line:#27364d;--muted:#9aabc2;--text:#edf4ff;--green:#39d98a;--yellow:#ffd166;--red:#ff7474;--blue:#80b7ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#182a45,var(--bg) 55%);color:var(--text);font:15px/1.5 Inter,system-ui,Segoe UI,sans-serif}
+main{max-width:1200px;margin:auto;padding:32px 20px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.brand{display:flex;gap:14px;align-items:center}.logo{width:48px;height:48px;border-radius:15px;background:linear-gradient(140deg,#39d98a,#3989ff);display:grid;place-items:center;color:#081421;font-weight:900;font-size:20px}.eyebrow{color:var(--green);font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}h1{font-size:clamp(24px,4vw,36px);margin:3px 0}p{color:var(--muted);margin:4px 0}.btn{border:1px solid #3b5577;background:#1b2b42;color:var(--text);border-radius:10px;padding:11px 15px;cursor:pointer;font-weight:700}.btn:hover{background:#263c59}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:28px 0}.card,.site{background:linear-gradient(145deg,#172439,#111a2a);border:1px solid var(--line);border-radius:16px;padding:18px}.stat-label{color:var(--muted);font-size:13px}.stat-value{font-size:30px;font-weight:800;margin-top:5px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin:28px 0 14px}.section-head h2{margin:0;font-size:20px}.sites{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.site-head{display:flex;justify-content:space-between;gap:10px;align-items:center}.site h3{font-size:17px;margin:0}.site a{color:var(--blue);text-decoration:none;font-size:13px;overflow-wrap:anywhere}.pill{font-size:12px;border-radius:99px;padding:4px 9px;background:#25334a;color:var(--muted);white-space:nowrap}.pill.ok{color:var(--green);background:#12382d}.pill.bad{color:var(--red);background:#421f2b}.pill.warn{color:var(--yellow);background:#40351b}.details{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:17px}.detail{border-top:1px solid var(--line);padding-top:10px}.detail span{display:block;color:var(--muted);font-size:12px}.detail strong{display:block;margin-top:3px}.site p{font-size:13px;margin-top:14px}.lower{display:grid;grid-template-columns:1.2fr 1fr;gap:14px}.list{padding-left:20px;color:var(--muted)}.list li{margin:9px 0}.footer{margin-top:26px;padding-top:16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}.error{color:var(--yellow);font-size:13px;margin-top:10px}.hidden{display:none}@media(max-width:850px){.sites{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.lower{grid-template-columns:1fr}}@media(max-width:560px){main{padding:22px 13px}.sites{grid-template-columns:1fr}.stat-value{font-size:25px}}
+</style>
+</head>
+<body><main>
+<header class="top"><div class="brand"><div class="logo">24</div><div><div class="eyebrow">Central operacional</div><h1>Divulgação 24h</h1><p>Monitoramento e planejamento dos seus seis sites.</p></div></div><button id="refresh" class="btn">↻ Atualizar dados</button></header>
+<section class="stats" aria-label="Resumo"><div class="card"><div class="stat-label">Sites cadastrados</div><div id="total" class="stat-value">6</div></div><div class="card"><div class="stat-label">Sites respondendo</div><div id="online" class="stat-value">—</div></div><div class="card"><div class="stat-label">Sitemaps acessíveis</div><div id="sitemaps" class="stat-value">—</div></div><div class="card"><div class="stat-label">Itens para verificar</div><div id="issues" class="stat-value">—</div></div></section>
+<div class="section-head"><div><h2>Seus sites</h2><p>Estado da última verificação disponível</p></div><span id="checked" class="pill">Aguardando relatório</span></div>
+<section id="sites" class="sites"><div class="card">Carregando cadastro dos sites…</div></section><div id="error" class="error hidden"></div>
+<div class="section-head"><div><h2>Fila de divulgação</h2><p>Pautas sugeridas para análise antes de publicar</p></div></div>
+<section class="lower"><div class="card"><h3>Plano de conteúdo</h3><div id="plan">Carregando sugestões…</div></div><div class="card"><h3>Automação e segurança</h3><ul class="list"><li>Verificar disponibilidade, robots.txt e sitemap.</li><li>Preparar pautas diferentes para cada domínio.</li><li>Publicação social fica em rascunho até configurar APIs e permissões.</li><li>Sem tráfego artificial, cliques incentivados ou spam.</li><li>Conectar Search Console e Analytics para medir resultados reais.</li></ul></div></section>
+<div class="footer">Os dados só refletem execuções registradas. Esta interface não prova que uma rotina agendada esteja ativa no servidor. Atualizado pelo relatório gerado no repositório.</div>
+</main>
+<script>
+const $=id=>document.getElementById(id);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function pill(ok,label){return '<span class="pill '+(ok?'ok':'bad')+'">'+esc(label)+'</span>'}
+async function getJson(file){const r=await fetch(file+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error(file+' indisponível ('+r.status+')');return r.json()}
+async function load(){
+ $('refresh').disabled=true;$('error').classList.add('hidden');
+ try{
+  const [cfg,report,plan]=await Promise.all([getJson('config/sites.json'),getJson('data/latest.json').catch(()=>null),getJson('data/promotion-plan.json').catch(()=>null)]);
+  $('total').textContent=cfg.length;
+  if(report){
+   $('online').textContent=report.summary.online+'/'+report.summary.totalSites;
+   $('sitemaps').textContent=report.summary.sitemapAccessible+'/'+report.summary.totalSites;
+   $('issues').textContent=report.summary.withIssues;
+   $('checked').textContent='Verificado '+new Date(report.generatedAt).toLocaleString('pt-BR');
+  }else{$('online').textContent='—';$('sitemaps').textContent='—';$('issues').textContent='—';$('checked').textContent='Ainda sem relatório';}
+  const rs=report?.sites||[];
+  $('sites').innerHTML=cfg.map(s=>{const d=rs.find(x=>x.id===s.id);return '<article class="site"><div class="site-head"><h3>'+esc(s.name)+'</h3>'+(d?pill(d.home.ok,d.home.ok?'Online':'Verificar'): '<span class="pill warn">Sem dados</span>')+'</div><a href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.url)+'</a><div class="details"><div class="detail"><span>Home</span><strong>'+(d?esc(d.home.status??d.home.note):'Sem verificação')+'</strong></div><div class="detail"><span>Sitemap</span><strong>'+(d?esc(d.sitemap.status??d.sitemap.note):'Sem verificação')+'</strong></div></div><p>Temas: '+esc(s.topics.join(' · '))+'</p>'+(d?.issues?.length?'<p class="error">Atenção: '+esc(d.issues.join(', '))+'</p>':'')+'</article>'}).join('');
+  $('plan').innerHTML=plan?.items?.length?'<p>'+esc(plan.generatedAt?new Date(plan.generatedAt).toLocaleDateString('pt-BR'):'')+' · '+plan.items.length+' pautas sugeridas</p><ul class="list">'+plan.items.map(i=>'<li><strong>'+esc(i.siteName)+'</strong>: '+esc(i.suggestedTitle)+'<br><span class="pill warn">Aguardando revisão</span></li>').join('')+'</ul>':'<p>Nenhum plano gerado ainda. A rotina automática irá criar os primeiros rascunhos.</p>';
+ }catch(e){$('error').textContent='Não foi possível carregar os arquivos de dados: '+e.message+' · Confira se o site está publicado com a pasta do repositório.';$('error').classList.remove('hidden')}
+ finally{$('refresh').disabled=false}
+}
+$('refresh').addEventListener('click',load);load();
+</script></body></html>
