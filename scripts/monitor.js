@@ -25,6 +25,7 @@ async function check(url) {
       bytes: Buffer.byteLength(body),
       checkedAt: new Date().toISOString(),
       note: res.ok ? "Resposta HTTP recebida" : `Resposta HTTP ${res.status}`,
+      xmlMarkerFound: /<urlset|<sitemapindex/i.test(body),
       preview: body.slice(0, 180).replace(/\s+/g, " ")
     };
   } catch (err) {
@@ -47,7 +48,7 @@ const results = await Promise.all(sites.map(async site => {
     check(site.url), check(site.sitemap), check(site.robots)
   ]);
   const sitemapLooksValid = sitemap.ok && /xml/i.test(sitemap.contentType || "") &&
-    /<urlset|<sitemapindex/i.test(sitemap.preview || "");
+    sitemap.xmlMarkerFound === true;
   return {
     ...site, checkedAt: new Date().toISOString(), home, sitemap, robots,
     sitemapLooksValid,
