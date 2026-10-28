@@ -12,7 +12,7 @@ concurrency:
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Baixar repositório
         uses: actions/checkout@v4
@@ -22,18 +22,30 @@ jobs:
           node-version: "22"
       - name: Verificar sites
         run: npm run monitor
+      - name: Sincronizar métricas Google (execução diária ou manual)
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 6 * * *'
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+          GA4_PROPERTY_ID_OOLIVO: ${{ secrets.GA4_PROPERTY_ID_OOLIVO }}
+          GA4_PROPERTY_ID_BIOMASSA_FLORESTAL: ${{ secrets.GA4_PROPERTY_ID_BIOMASSA_FLORESTAL }}
+          GA4_PROPERTY_ID_DAYMONEY: ${{ secrets.GA4_PROPERTY_ID_DAYMONEY }}
+          GA4_PROPERTY_ID_VERSOS_MUSICAIS: ${{ secrets.GA4_PROPERTY_ID_VERSOS_MUSICAIS }}
+          GA4_PROPERTY_ID_GLOBALTOOLS: ${{ secrets.GA4_PROPERTY_ID_GLOBALTOOLS }}
+          GA4_PROPERTY_ID_CRIPTOPROBOT: ${{ secrets.GA4_PROPERTY_ID_CRIPTOPROBOT }}
+        run: node scripts/sync-google.js
       - name: Preparar plano diário
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 6 * * *'
         run: node scripts/create-plan.js
       - name: Gerar plano se ainda não existir
         run: |
           if [ ! -f data/promotion-plan.json ]; then node scripts/create-plan.js; fi
-      - name: Registrar relatório e plano
+      - name: Registrar relatórios e plano
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/latest.json data/promotion-plan.json
+          if [ -f data/google-metrics.json ]; then git add data/google-metrics.json; fi
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update monitoring report and promotion plan"
+            git commit -m "chore: update monitoring, analytics and promotion plan"
             git push
           fi
