@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-28T16:43:43.115Z",
+  "generatedAt": "2026-10-28T21:19:50.230Z",
   "summary": {
     "totalSites": 6,
     "online": 6,
     "sitemapAccessible": 6,
-    "withIssues": 1
+    "withIssues": 0
   },
   "sites": [
     {
@@ -16,10 +16,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://oolivo.com.br/sitemap.xml",
-        "durationMs": 837,
+        "durationMs": 990,
         "contentType": "application/xml; charset=utf-8",
         "bytes": 12800,
-        "checkedAt": "2026-10-28T16:43:40.678Z",
+        "checkedAt": "2026-10-28T21:19:49.734Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url><loc>https://oolivo.com.br/</loc><lastmod>2026-10-28</lastmod></url> <u"
@@ -29,10 +29,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://oolivo.com.br/robots.txt",
-        "durationMs": 833,
+        "durationMs": 988,
         "contentType": "text/plain; charset=utf-8",
         "bytes": 66,
-        "checkedAt": "2026-10-28T16:43:40.675Z",
+        "checkedAt": "2026-10-28T21:19:49.733Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://oolivo.com.br/sitemap.xml "
@@ -42,23 +42,24 @@
         "produtos e serviços",
         "tutoriais práticos"
       ],
-      "checkedAt": "2026-10-28T16:43:40.678Z",
+      "checkedAt": "2026-10-28T21:19:49.741Z",
       "home": {
         "url": "https://oolivo.com.br/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://oolivo.com.br/",
-        "durationMs": 772,
+        "durationMs": 1048,
         "contentType": "text/html; charset=utf-8",
         "bytes": 13204,
-        "checkedAt": "2026-10-28T16:43:40.571Z",
+        "checkedAt": "2026-10-28T21:19:49.741Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!doctype html><html lang=\"pt-BR\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Oolivo — Ferramentas Online Gratuitas e Recu"
       },
       "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
       "issues": [],
-      "previousHomeOk": null
+      "previousHomeOk": true
     },
     {
       "id": "biomassa-florestal",
@@ -69,10 +70,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://biomassaflorestal.com.br/sitemap.xml",
-        "durationMs": 903,
+        "durationMs": 496,
         "contentType": "application/xml; charset=utf-8",
         "bytes": 820,
-        "checkedAt": "2026-10-28T16:43:40.747Z",
+        "checkedAt": "2026-10-28T21:19:49.243Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url><loc>https://biomassaflorestal.com.br/</loc></url> <url><loc>https://bi"
@@ -82,10 +83,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://biomassaflorestal.com.br/robots.txt",
-        "durationMs": 1309,
+        "durationMs": 680,
         "contentType": "application/octet-stream",
         "bytes": 78,
-        "checkedAt": "2026-10-28T16:43:41.153Z",
+        "checkedAt": "2026-10-28T21:19:49.428Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://biomassaflorestal.com.br/sitemap.xml "
@@ -95,23 +96,24 @@
         "lenha e energia",
         "mercado florestal"
       ],
-      "checkedAt": "2026-10-28T16:43:41.153Z",
+      "checkedAt": "2026-10-28T21:19:49.428Z",
       "home": {
         "url": "https://biomassaflorestal.com.br/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://biomassaflorestal.com.br/",
-        "durationMs": 906,
+        "durationMs": 498,
         "contentType": "text/html; charset=utf-8",
         "bytes": 33464,
-        "checkedAt": "2026-10-28T16:43:40.749Z",
+        "checkedAt": "2026-10-28T21:19:49.244Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!doctype html> <html lang=\"pt-BR\"> <head> <meta charset=\"utf-8\"> <script async src=\"https://www.googletagmanager.com/gtag/js?id=G-KWWW8BNH9E\"></script> <script> window.dataLayer"
       },
       "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
       "issues": [],
-      "previousHomeOk": null
+      "previousHomeOk": true
     },
     {
       "id": "daymoney",
@@ -122,10 +124,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://daymoney.com.br/sitemap.xml",
-        "durationMs": 2007,
-        "contentType": "application/octet-stream",
+        "durationMs": 641,
+        "contentType": "application/xml; charset=utf-8",
         "bytes": 375,
-        "checkedAt": "2026-10-28T16:43:41.852Z",
+        "checkedAt": "2026-10-28T21:19:49.391Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url> <loc>https://daymoney.com.br/</loc> </url> <url> <loc>https:"
@@ -135,10 +137,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://daymoney.com.br/robots.txt",
-        "durationMs": 2004,
+        "durationMs": 907,
         "contentType": "text/plain; charset=utf-8",
         "bytes": 69,
-        "checkedAt": "2026-10-28T16:43:41.850Z",
+        "checkedAt": "2026-10-28T21:19:49.658Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://daymoney.com.br/sitemap.xml "
@@ -148,25 +150,24 @@
         "controle de despesas",
         "finanças para pequenas empresas"
       ],
-      "checkedAt": "2026-10-28T16:43:41.852Z",
+      "checkedAt": "2026-10-28T21:19:49.658Z",
       "home": {
         "url": "https://daymoney.com.br/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://daymoney.com.br/",
-        "durationMs": 1407,
+        "durationMs": 696,
         "contentType": "text/html; charset=utf-8",
         "bytes": 19072,
-        "checkedAt": "2026-10-28T16:43:41.252Z",
+        "checkedAt": "2026-10-28T21:19:49.445Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!doctype html> <html lang=\"pt-BR\"> <head> <meta charset=\"utf-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <!-- Google tag (gtag.js) --> <script"
       },
-      "sitemapLooksValid": false,
-      "issues": [
-        "sitemap_resposta_precisa_ser_validada"
-      ],
-      "previousHomeOk": null
+      "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
+      "issues": [],
+      "previousHomeOk": true
     },
     {
       "id": "versos-musicais",
@@ -177,10 +178,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://versosmusicais.com.br/sitemap.xml",
-        "durationMs": 2500,
+        "durationMs": 1074,
         "contentType": "application/xml; charset=utf-8",
         "bytes": 920,
-        "checkedAt": "2026-10-28T16:43:42.347Z",
+        "checkedAt": "2026-10-28T21:19:49.827Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url><loc>https://versosmusicais.com.br/</loc><changefreq>daily</changefreq><p"
@@ -190,10 +191,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://versosmusicais.com.br/robots.txt",
-        "durationMs": 3086,
+        "durationMs": 1276,
         "contentType": "text/plain; charset=utf-8",
         "bytes": 134,
-        "checkedAt": "2026-10-28T16:43:42.934Z",
+        "checkedAt": "2026-10-28T21:19:50.030Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://versosmusicais.com.br/sitemap.xml Sitemap: https://versosmusicais.com.br/sitemap-musicas.xml "
@@ -203,23 +204,24 @@
         "cifras e gêneros musicais",
         "descoberta musical"
       ],
-      "checkedAt": "2026-10-28T16:43:42.934Z",
+      "checkedAt": "2026-10-28T21:19:50.030Z",
       "home": {
         "url": "https://versosmusicais.com.br/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://versosmusicais.com.br/",
-        "durationMs": 2500,
+        "durationMs": 1076,
         "contentType": "text/html; charset=utf-8",
         "bytes": 2712,
-        "checkedAt": "2026-10-28T16:43:42.347Z",
+        "checkedAt": "2026-10-28T21:19:49.828Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!doctype html> <html lang=\"pt-BR\"> <head> <meta charset=\"UTF-8\" /> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /> <meta name=\"theme-color\" "
       },
       "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
       "issues": [],
-      "previousHomeOk": null
+      "previousHomeOk": true
     },
     {
       "id": "globaltools",
@@ -230,10 +232,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://globaltoolsnow.com/sitemap.xml",
-        "durationMs": 2584,
+        "durationMs": 1174,
         "contentType": "application/xml; charset=utf-8",
         "bytes": 30696,
-        "checkedAt": "2026-10-28T16:43:42.432Z",
+        "checkedAt": "2026-10-28T21:19:49.929Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:xhtml=\"http://www.w3.org/1999/xhtml\"><url><loc>https://globaltoolsnow.com/</"
@@ -243,10 +245,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://globaltoolsnow.com/robots.txt",
-        "durationMs": 2651,
+        "durationMs": 1172,
         "contentType": "text/plain; charset=utf-8",
         "bytes": 71,
-        "checkedAt": "2026-10-28T16:43:42.500Z",
+        "checkedAt": "2026-10-28T21:19:49.928Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://globaltoolsnow.com/sitemap.xml "
@@ -256,23 +258,24 @@
         "calculadoras e conversores",
         "tutoriais de produtividade"
       ],
-      "checkedAt": "2026-10-28T16:43:42.500Z",
+      "checkedAt": "2026-10-28T21:19:49.929Z",
       "home": {
         "url": "https://globaltoolsnow.com/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://globaltoolsnow.com/",
-        "durationMs": 2509,
+        "durationMs": 990,
         "contentType": "text/html; charset=utf-8",
         "bytes": 11871,
-        "checkedAt": "2026-10-28T16:43:42.357Z",
+        "checkedAt": "2026-10-28T21:19:49.745Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title data-i18n=\"pageTitle\">GlobalTools — Free Online"
       },
       "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
       "issues": [],
-      "previousHomeOk": null
+      "previousHomeOk": true
     },
     {
       "id": "criptoprobot",
@@ -283,10 +286,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://criptoprobot.com.br/sitemap.xml",
-        "durationMs": 3112,
+        "durationMs": 1288,
         "contentType": "application/xml",
         "bytes": 327,
-        "checkedAt": "2026-10-28T16:43:42.961Z",
+        "checkedAt": "2026-10-28T21:19:50.045Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": true,
         "preview": "<?xml version=\"1.0\" encoding=\"UTF-8\"?> <urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"> <url> <loc>https://criptoprobot.com.br/login.html</loc> </url> <url> "
@@ -296,10 +299,10 @@
         "status": 200,
         "ok": true,
         "finalUrl": "https://criptoprobot.com.br/robots.txt",
-        "durationMs": 3107,
+        "durationMs": 1473,
         "contentType": "text/plain; charset=UTF-8",
         "bytes": 73,
-        "checkedAt": "2026-10-28T16:43:42.957Z",
+        "checkedAt": "2026-10-28T21:19:50.230Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "User-agent: * Allow: / Sitemap: https://criptoprobot.com.br/sitemap.xml "
@@ -309,23 +312,24 @@
         "automação e análise",
         "gestão de risco"
       ],
-      "checkedAt": "2026-10-28T16:43:43.115Z",
+      "checkedAt": "2026-10-28T21:19:50.230Z",
       "home": {
         "url": "https://criptoprobot.com.br/",
         "status": 200,
         "ok": true,
         "finalUrl": "https://criptoprobot.com.br/",
-        "durationMs": 3266,
+        "durationMs": 1391,
         "contentType": "text/html; charset=UTF-8",
         "bytes": 217669,
-        "checkedAt": "2026-10-28T16:43:43.115Z",
+        "checkedAt": "2026-10-28T21:19:50.147Z",
         "note": "Resposta HTTP recebida",
         "xmlMarkerFound": false,
         "preview": "<!DOCTYPE html> <html lang=\"pt-BR\"> <head> <!-- CRIPTOPRO BUILD 2026-10-06-BRL01 --> <meta charset=\"UTF-8\"> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"> <"
       },
       "sitemapLooksValid": true,
+      "sitemapContentTypeUnusual": false,
       "issues": [],
-      "previousHomeOk": null
+      "previousHomeOk": true
     }
   ]
 }
