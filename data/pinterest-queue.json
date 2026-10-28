@@ -1,0 +1,66 @@
+{
+  "updatedAt": "2026-10-28T16:28:55.632Z",
+  "note": "Todos os itens começam como aguardando_revisao. Só itens explicitamente aprovados, com imagem pública válida e link HTTPS, são elegíveis para publicação.",
+  "items": [
+    {
+      "id": "oolivo-tools",
+      "siteId": "oolivo",
+      "title": "Ferramentas online para facilitar tarefas do dia a dia",
+      "description": "Conheça ferramentas online e dicas práticas no Oolivo.",
+      "link": "https://oolivo.com.br/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    },
+    {
+      "id": "biomassa-guide",
+      "siteId": "biomassa-florestal",
+      "title": "Biomassa florestal: aplicações e energia",
+      "description": "Conteúdo informativo sobre biomassa florestal e suas aplicações.",
+      "link": "https://biomassaflorestal.com.br/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    },
+    {
+      "id": "daymoney-budget",
+      "siteId": "daymoney",
+      "title": "Organização financeira para pequenas empresas",
+      "description": "Ideias práticas para organizar despesas e acompanhar o orçamento.",
+      "link": "https://daymoney.com.br/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    },
+    {
+      "id": "versos-music",
+      "siteId": "versos-musicais",
+      "title": "Explore músicas e gêneros musicais",
+      "description": "Descubra conteúdos musicais e explore gêneros no Versos Musicais.",
+      "link": "https://versosmusicais.com.br/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    },
+    {
+      "id": "globaltools-online",
+      "siteId": "globaltools",
+      "title": "Ferramentas online de produtividade",
+      "description": "Explore ferramentas online úteis para tarefas do cotidiano.",
+      "link": "https://globaltoolsnow.com/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    },
+    {
+      "id": "cripto-risk",
+      "siteId": "criptoprobot",
+      "title": "Gestão de risco no estudo de criptoativos",
+      "description": "Material educativo sobre automação e gestão de risco em criptoativos.",
+      "link": "https://criptoprobot.com.br/",
+      "imageUrl": "",
+      "boardId": "",
+      "status": "aguardando_revisao"
+    }
+  ]
+}
