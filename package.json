@@ -1,0 +1,11 @@
+{
+  "name": "central-divulgacao-24h",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Central de monitoramento e planejamento de divulgação para seis sites.",
+  "type": "module",
+  "scripts": {
+    "monitor": "node scripts/monitor.js",
+    "test": "node --test"
+  }
+}
