@@ -1,0 +1,38 @@
+name: Monitoramento e plano de divulgação
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17,47 * * * *"
+permissions:
+  contents: write
+concurrency:
+  group: divulgacao-monitor
+  cancel-in-progress: false
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Verificar sites
+        run: npm run monitor
+      - name: Preparar plano diário
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 6 * * *'
+        run: node scripts/create-plan.js
+      - name: Gerar plano se ainda não existir
+        run: |
+          if [ ! -f data/promotion-plan.json ]; then node scripts/create-plan.js; fi
+      - name: Registrar relatório e plano
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/latest.json data/promotion-plan.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update monitoring report and promotion plan"
+            git push
+          fi
