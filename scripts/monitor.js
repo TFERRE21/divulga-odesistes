@@ -47,15 +47,16 @@ const results = await Promise.all(sites.map(async site => {
   const [home, sitemap, robots] = await Promise.all([
     check(site.url), check(site.sitemap), check(site.robots)
   ]);
-  const sitemapLooksValid = sitemap.ok && /xml/i.test(sitemap.contentType || "") &&
-    sitemap.xmlMarkerFound === true;
+  const sitemapLooksValid = sitemap.ok && sitemap.xmlMarkerFound === true;
+  const sitemapContentTypeUnusual = sitemap.ok && !/xml/i.test(sitemap.contentType || "");
   return {
     ...site, checkedAt: new Date().toISOString(), home, sitemap, robots,
-    sitemapLooksValid,
+    sitemapLooksValid, sitemapContentTypeUnusual,
     issues: [
       ...(!home.ok ? ["site_indisponivel_ou_erro_http"] : []),
       ...(!sitemap.ok ? ["sitemap_nao_acessivel"] : []),
-      ...(sitemap.ok && !sitemapLooksValid ? ["sitemap_resposta_precisa_ser_validada"] : []),
+      ...(sitemap.ok && !sitemapLooksValid ? ["sitemap_conteudo_nao_parece_xml"] : []),
+      ...(sitemapContentTypeUnusual ? ["sitemap_content_type_incomum"] : []),
       ...(!robots.ok ? ["robots_txt_nao_acessivel"] : [])
     ],
     previousHomeOk: previous.sites?.find(x => x.id === site.id)?.home?.ok ?? null
