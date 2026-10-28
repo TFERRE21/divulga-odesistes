@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-10-28T16:25:39.398Z",
+  "notice": "Sugestões iniciais de pauta; não são publicações realizadas. Revise conteúdo, fatos, direitos autorais e links antes de divulgar.",
+  "items": [
+    {
+      "date": "2026-10-28",
+      "siteId": "oolivo",
+      "siteName": "Oolivo",
+      "url": "https://oolivo.com.br/",
+      "topic": "ferramentas online",
+      "suggestedTitle": "Ferramentas online gratuitas para resolver tarefas do dia a dia",
+      "actions": [
+        "Revisar as ferramentas existentes e explicar usos com exemplos originais.",
+        "Melhorar título, descrição, links internos e experiência móvel.",
+        "Preparar uma publicação social com link rastreável e chamada honesta."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-28",
+      "siteId": "biomassa-florestal",
+      "siteName": "Biomassa Florestal",
+      "url": "https://biomassaflorestal.com.br/",
+      "topic": "biomassa e energia",
+      "suggestedTitle": "Biomassa florestal: aplicações, benefícios e pontos de atenção",
+      "actions": [
+        "Produzir conteúdo original com fontes técnicas confiáveis.",
+        "Adicionar perguntas frequentes e links para páginas comerciais pertinentes.",
+        "Preparar material visual informativo para revisão."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-28",
+      "siteId": "daymoney",
+      "siteName": "DayMoney",
+      "url": "https://daymoney.com.br/",
+      "topic": "controle de despesas",
+      "suggestedTitle": "Como organizar as despesas mensais de uma pequena empresa",
+      "actions": [
+        "Criar exemplo prático e modelo de controle compreensível.",
+        "Explicar limitações e evitar promessas financeiras garantidas.",
+        "Adicionar link contextual para o produto, se relevante."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-28",
+      "siteId": "versos-musicais",
+      "siteName": "Versos Musicais",
+      "url": "https://versosmusicais.com.br/",
+      "topic": "descoberta musical",
+      "suggestedTitle": "Como descobrir músicas e explorar gêneros musicais",
+      "actions": [
+        "Criar conteúdo editorial original sobre gêneros e descoberta musical.",
+        "Respeitar direitos autorais de letras, cifras e imagens.",
+        "Melhorar navegação entre gêneros, artistas e páginas autorizadas."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-28",
+      "siteId": "globaltools",
+      "siteName": "GlobalTools",
+      "url": "https://globaltoolsnow.com/",
+      "topic": "ferramentas de produtividade",
+      "suggestedTitle": "Ferramentas online para economizar tempo em tarefas comuns",
+      "actions": [
+        "Priorizar ferramentas funcionais e demonstrar exemplos de uso.",
+        "Verificar sitemap, páginas de erro e links internos.",
+        "Preparar uma demonstração curta para publicação social."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-28",
+      "siteId": "criptoprobot",
+      "siteName": "CriptoProBot",
+      "url": "https://criptoprobot.com.br/",
+      "topic": "análise e gestão de risco",
+      "suggestedTitle": "Noções de gestão de risco ao estudar automação de criptoativos",
+      "actions": [
+        "Priorizar educação e riscos, sem prometer rentabilidade.",
+        "Distinguir exemplos didáticos de recomendações de investimento.",
+        "Adicionar avisos claros e links para documentação pertinente."
+      ],
+      "suggestedChannels": [
+        "SEO",
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)"
+      ],
+      "status": "aguardando_revisao"
+    }
+  ]
+}
