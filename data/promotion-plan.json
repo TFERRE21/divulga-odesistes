@@ -1,12 +1,88 @@
 {
-  "generatedAt": "2026-10-30T12:56:03.762Z",
+  "generatedAt": "2026-10-31T12:29:37.352Z",
   "notice": "São sugestões de pauta, não publicações feitas. Revise fatos, direitos autorais, links e regras de cada plataforma antes de publicar.",
   "items": [
     {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "siteId": "oolivo",
       "siteName": "Oolivo",
       "url": "https://oolivo.com.br/",
+      "topic": "produtos e serviços",
+      "suggestedTitle": "Produtos e serviços: guia prático",
+      "actions": [
+        "Criar ou melhorar uma página original e útil sobre “produtos e serviços”, sem duplicar conteúdo de outro domínio.",
+        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
+        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
+      ],
+      "suggestedChannels": [
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)",
+        "SEO e links internos (recomendação)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-31",
+      "siteId": "biomassa-florestal",
+      "siteName": "Biomassa Florestal",
+      "url": "https://biomassaflorestal.com.br/",
+      "topic": "lenha e energia",
+      "suggestedTitle": "Lenha e energia: guia prático",
+      "actions": [
+        "Criar ou melhorar uma página original e útil sobre “lenha e energia”, sem duplicar conteúdo de outro domínio.",
+        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
+        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
+      ],
+      "suggestedChannels": [
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)",
+        "SEO e links internos (recomendação)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-31",
+      "siteId": "daymoney",
+      "siteName": "DayMoney",
+      "url": "https://daymoney.com.br/",
+      "topic": "educação financeira",
+      "suggestedTitle": "Educação financeira: guia prático",
+      "actions": [
+        "Criar ou melhorar uma página original e útil sobre “educação financeira”, sem duplicar conteúdo de outro domínio.",
+        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
+        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
+      ],
+      "suggestedChannels": [
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)",
+        "SEO e links internos (recomendação)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-31",
+      "siteId": "versos-musicais",
+      "siteName": "Versos Musicais",
+      "url": "https://versosmusicais.com.br/",
+      "topic": "cifras e gêneros musicais",
+      "suggestedTitle": "Cifras e gêneros musicais: guia prático",
+      "actions": [
+        "Criar ou melhorar uma página original e útil sobre “cifras e gêneros musicais”, sem duplicar conteúdo de outro domínio.",
+        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
+        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
+      ],
+      "suggestedChannels": [
+        "Pinterest (rascunho para revisão)",
+        "redes sociais oficiais (rascunho para revisão)",
+        "SEO e links internos (recomendação)"
+      ],
+      "status": "aguardando_revisao"
+    },
+    {
+      "date": "2026-10-31",
+      "siteId": "globaltools",
+      "siteName": "GlobalTools",
+      "url": "https://globaltoolsnow.com/",
       "topic": "ferramentas online",
       "suggestedTitle": "Ferramentas online: guia prático",
       "actions": [
@@ -22,90 +98,14 @@
       "status": "aguardando_revisao"
     },
     {
-      "date": "2026-10-30",
-      "siteId": "biomassa-florestal",
-      "siteName": "Biomassa Florestal",
-      "url": "https://biomassaflorestal.com.br/",
-      "topic": "biomassa",
-      "suggestedTitle": "Biomassa: guia prático",
-      "actions": [
-        "Criar ou melhorar uma página original e útil sobre “biomassa”, sem duplicar conteúdo de outro domínio.",
-        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
-        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
-      ],
-      "suggestedChannels": [
-        "Pinterest (rascunho para revisão)",
-        "redes sociais oficiais (rascunho para revisão)",
-        "SEO e links internos (recomendação)"
-      ],
-      "status": "aguardando_revisao"
-    },
-    {
-      "date": "2026-10-30",
-      "siteId": "daymoney",
-      "siteName": "DayMoney",
-      "url": "https://daymoney.com.br/",
-      "topic": "finanças para pequenas empresas",
-      "suggestedTitle": "Finanças para pequenas empresas: guia prático",
-      "actions": [
-        "Criar ou melhorar uma página original e útil sobre “finanças para pequenas empresas”, sem duplicar conteúdo de outro domínio.",
-        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
-        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
-      ],
-      "suggestedChannels": [
-        "Pinterest (rascunho para revisão)",
-        "redes sociais oficiais (rascunho para revisão)",
-        "SEO e links internos (recomendação)"
-      ],
-      "status": "aguardando_revisao"
-    },
-    {
-      "date": "2026-10-30",
-      "siteId": "versos-musicais",
-      "siteName": "Versos Musicais",
-      "url": "https://versosmusicais.com.br/",
-      "topic": "música e artistas",
-      "suggestedTitle": "Música e artistas: guia prático",
-      "actions": [
-        "Criar ou melhorar uma página original e útil sobre “música e artistas”, sem duplicar conteúdo de outro domínio.",
-        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
-        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
-      ],
-      "suggestedChannels": [
-        "Pinterest (rascunho para revisão)",
-        "redes sociais oficiais (rascunho para revisão)",
-        "SEO e links internos (recomendação)"
-      ],
-      "status": "aguardando_revisao"
-    },
-    {
-      "date": "2026-10-30",
-      "siteId": "globaltools",
-      "siteName": "GlobalTools",
-      "url": "https://globaltoolsnow.com/",
-      "topic": "tutoriais de produtividade",
-      "suggestedTitle": "Tutoriais de produtividade: guia prático",
-      "actions": [
-        "Criar ou melhorar uma página original e útil sobre “tutoriais de produtividade”, sem duplicar conteúdo de outro domínio.",
-        "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
-        "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
-      ],
-      "suggestedChannels": [
-        "Pinterest (rascunho para revisão)",
-        "redes sociais oficiais (rascunho para revisão)",
-        "SEO e links internos (recomendação)"
-      ],
-      "status": "aguardando_revisao"
-    },
-    {
-      "date": "2026-10-30",
+      "date": "2026-10-31",
       "siteId": "criptoprobot",
       "siteName": "CriptoProBot",
       "url": "https://criptoprobot.com.br/",
-      "topic": "educação sobre criptoativos",
-      "suggestedTitle": "Educação sobre criptoativos: guia prático",
+      "topic": "automação e análise",
+      "suggestedTitle": "Automação e análise: guia prático",
       "actions": [
-        "Criar ou melhorar uma página original e útil sobre “educação sobre criptoativos”, sem duplicar conteúdo de outro domínio.",
+        "Criar ou melhorar uma página original e útil sobre “automação e análise”, sem duplicar conteúdo de outro domínio.",
         "Adicionar links internos relevantes e verificar título, descrição e versão móvel.",
         "Preparar uma publicação adaptada ao canal, com link identificável por UTM e sem promessas enganosas."
       ],
