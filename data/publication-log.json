@@ -1,11 +1,20 @@
 {
-  "generatedAt": "2026-11-06T19:29:04.401Z",
+  "generatedAt": "2026-11-07T17:45:51.901Z",
   "summary": {
     "published": 0,
     "failed": 0,
-    "skipped": 9
+    "skipped": 10
   },
   "events": [
+    {
+      "timestamp": "2026-11-07T17:45:51.901Z",
+      "channel": "Pinterest",
+      "siteId": null,
+      "siteName": null,
+      "status": "ignorado",
+      "destination": "Pinterest",
+      "message": "Credencial PINTEREST_ACCESS_TOKEN ausente; nenhuma publicação realizada."
+    },
     {
       "timestamp": "2026-11-06T19:29:04.401Z",
       "channel": "Pinterest",
